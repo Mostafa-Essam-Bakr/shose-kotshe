@@ -1,0 +1,971 @@
+body{
+    background-image: url(bg2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.nav {
+    margin-left: 150px;
+    width: 1000px;
+    height: 50px;
+    background-image: linear-gradient(to right,#1e234d,30%,white,40% ,#1e234d);
+        border-radius: 20px 20px;
+
+}
+
+
+.linav {
+    position: relative;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 59px;
+    top: 16px;
+    left: -31px;
+}
+
+.linav li{
+    position: relative;
+    background-size: 20px 20px;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-family: sans-serif;
+    cursor: pointer;
+
+    border-radius: 5px 5px;
+    text-transform: capitalize;
+
+}
+
+
+.linav li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: beige;
+    bottom: -7px;
+    transition-duration: 1s;
+
+}
+
+.linav li i{
+    color: rgb(255, 0, 0);
+}
+
+
+
+
+.dropli{
+    position: absolute;
+    left: -18px;
+    list-style: none;
+    width: 50px;
+    height: 64px;
+    top: 42px;
+    transition-duration: 1s;
+    opacity: 0%;
+    display: flex;
+    gap: 13px;
+    background-image: linear-gradient(to top,rgb(27 30 71),rgb(80 85 179),rgb(116 121 251));
+    border-radius: 10px;
+    box-shadow: 2px 5px 8px #898989;
+}
+.dropli li{
+    display: flex;
+    justify-content: center;
+    left: -17px;
+
+}
+
+.dropli a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.linav li:hover{
+    color: white;
+}
+
+li:hover::before {
+    width: 100%;
+
+}
+
+li:hover .dropli {
+opacity: 100%;
+}
+
+li:hover i {
+color: rgb(0, 255, 0);    }
+
+
+
+
+#h2{
+    margin-left: -87px;
+    color: #000000;
+    text-align: center;
+    margin-top: -24px;
+}
+#she{
+    color: #000000;
+}
+
+
+.icon {
+        position: absolute;
+        list-style: none;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 59px;
+        top: 34px;
+        left: 202px;
+        color: #ffffff;
+}
+
+
+
+.icon i {
+    opacity: 30%;
+    position: relative;
+text-transform: capitalize;
+color: white;
+cursor: pointer;
+
+animation-name: down;
+     animation-duration: 10s;
+     animation-delay: 5;
+     animation-timing-function: ease;
+        
+    }
+    @keyframes down {
+        10%{
+            opacity: 0;
+        }
+        20%{
+            opacity: 100%;
+        }
+        30%{
+            opacity: 0;
+        }
+        40%{
+            opacity: 100%;
+        }
+        50%{
+            opacity: 0;
+        }
+        60%{
+            opacity: 100%;
+        }
+        70%{
+            opacity: 0;
+        }
+        80%{
+            opacity: 100%;
+        }
+        
+
+
+    }
+
+
+
+
+.icon i:hover{
+    opacity: 100%;
+}
+
+#btn1{
+    position: absolute;
+    top: 26px;
+    right: -90px;
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(to right,rgb(49, 0, 105),rgb(111, 0, 255));
+    border-radius: 10px 10px;
+    width: 89px;
+    height: 30px;
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: vib;
+    animation-duration: 3s;
+   animation-delay: 2s;
+   animation-timing-function: linear;
+   animation-direction: alternate;
+   animation-fill-mode: forwards;
+  }
+  
+  @keyframes vib {
+  
+      10%{
+        right: -90px;
+      }
+   
+
+      
+      30%{
+        right: -30px;
+
+        
+
+      }
+      60%{
+        right: 0px;
+
+
+      }
+
+      70%{
+        right: 20px;
+      }
+
+      80%{
+        right: 40px;
+      }
+
+      90%{
+        right: 60px;
+      }
+
+      100%{
+        right: 80px;
+      }
+      
+  }
+
+
+
+
+
+#serch {
+    position: absolute;
+    top: 16%;
+    right: 41%;
+    background: none;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: white;
+    border-radius: 20px 20px;
+    width: 300px;
+    box-shadow: 4px 17px 13px rgb(53, 52, 52);
+    color: white;
+}
+
+#serch:hover{
+    box-shadow: none;
+}
+
+.rotat{
+    display: none;
+}
+
+
+
+#bhs{
+    position: absolute;
+    top: 113px;
+    left: 470px;
+    cursor: pointer;
+
+}
+
+
+
+#h1{
+   position: relative;
+   top: 50px;
+
+        color: white;
+        text-align: center;
+        text-shadow: 3px 6px 10px black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  animation-name: up;
+  animation-duration: 1s;
+ animation-delay: 0;
+ animation-timing-function: ease;
+ animation-direction: alternate;
+}
+
+@keyframes up {
+
+    10%{
+       top: 100px;
+       opacity: 60%;
+       color: #151f74;
+    }
+    20%{
+        timeline-scope: 80px;
+        opacity: 70%;
+
+        color: #313b99
+    }
+    30%{
+        timeline-scope: 70px;
+        opacity: 80%;
+
+        color: #3c49b9
+    }
+    40%{
+        timeline-scope: 60px;
+        opacity: 90%;
+
+        color: #b8bef8
+    }
+    50%{
+        timeline-scope: 50px;
+        opacity: 100%;
+
+        color: #ffffff
+    }
+    
+}
+
+
+
+
+.content{
+width: 250px;
+height: 250px;
+background-image: url(koutch2.jpg);
+border-radius: 10px 10px;
+position: absolute;
+top: 50%;
+right: 43%;
+box-shadow: 5px 5px 9px gray;
+}
+.content:hover{
+    box-shadow: none;
+}
+
+.content2{
+    width: 250px;
+    height: 250px;
+    background-image: url(koutch2.jpg);
+    border-radius: 10px 10px;
+    position: absolute;
+    top: 50%;
+    right: 70%;
+    box-shadow: 5px 5px 9px gray;
+
+    }
+
+    .content2:hover{
+        box-shadow: none;
+    }
+    .content3{
+        width: 250px;
+        height: 250px;
+        background-image: url(koutch2.jpg);
+        border-radius: 10px 10px;
+        position: absolute;
+        top: 50%;
+        right: 15%;
+        box-shadow: 5px 5px 9px gray;
+
+        }
+
+
+        .content3:hover{
+            box-shadow: none;
+        }
+
+
+.color li img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -211px;
+    right: -31px;
+    cursor: pointer;
+    animation-name: img;
+    animation-duration: 1s;
+   animation-delay: 0;
+   animation-timing-function: ease-in;
+   animation-direction: alternate;
+
+}
+@keyframes img {
+  
+     
+    100%{
+       top: -180px;
+       opacity: 90%;
+       color: #151f74;
+    }
+    30%{
+       top: -190px;
+       opacity: 90%;
+       color: #151f74;
+    }
+    60%{
+       top: -200px;
+       opacity: 95%;
+       color: #151f74;
+    }
+      100%{
+       top: -211px;
+       opacity: 100%;
+       color: #151f74;
+     }
+     
+     
+ }
+
+.color2 li img {
+    width: 275px;
+    height: 155px;
+    position: absolute;
+    top: -192px;
+    left: -11px;
+    transform: rotate(-31deg);
+    cursor: pointer;
+
+
+    animation-name: up2;
+    animation-duration: 1s;
+   animation-delay: 0;
+   animation-timing-function: ease-in;
+   animation-direction: alternate;
+  }
+  @keyframes up2 {
+  
+     
+     40%{
+        top: -160px;
+        opacity: 90%;
+        color: #151f74;
+     }
+     50%{
+        top: -170px;
+        opacity: 90%;
+        color: #151f74;
+     }
+     90%{
+        top: -188px;
+        opacity: 95%;
+        color: #151f74;
+     }
+       100%{
+        top: -192px;
+        opacity: 100%;
+        color: #151f74;
+      }
+      
+      
+  }
+  
+  @keyframes up2 {
+  
+     
+     10%{
+        top: -160px;
+        opacity: 90%;
+        color: #151f74;
+     }
+     30%{
+        top: -170px;
+        opacity: 90%;
+        color: #151f74;
+     }
+     60%{
+        top: -188px;
+        opacity: 95%;
+        color: #151f74;
+     }
+       100%{
+        top: -192px;
+        opacity: 100%;
+        color: #151f74;
+      }
+      
+      
+  }
+.color3 li img {
+    width: 251px;
+    height: 238px;
+    position: absolute;
+    top: -248px;
+    left: 23px;
+    transform: rotate(-1deg);
+    cursor: pointer;
+    animation-name: img3;
+    animation-duration: 1s;
+   animation-delay: 0;
+   animation-timing-function: ease-in;
+   animation-direction: alternate;
+}
+@keyframes img3 {
+  
+     
+    10%{
+       top: -210px;
+       opacity: 90%;
+       color: #151f74;
+    }
+    30%{
+       top: -220px;
+       opacity: 90%;
+       color: #151f74;
+    }
+    60%{
+       top: -230px;
+       opacity: 95%;
+       color: #151f74;
+    }
+      100%{
+       top: -248px;
+       opacity: 100%;
+       color: #151f74;
+     }
+     
+     
+ }
+ #p3{
+    opacity: 0;
+ position: absolute;
+    color: white;
+    font-size: xx-large;
+    right: -127px;
+    top: 0;
+    text-shadow: -1px 9px 7px black;
+    animation-name: p3;
+    animation-duration: 1s;
+   animation-delay: 1.2s;
+   animation-timing-function: ease-in;
+   animation-direction: alternate;
+animation-fill-mode: forwards;}
+@keyframes p3 {
+  
+     
+    10%{
+       top: 30px;
+       opacity: 0;
+      
+    }
+    30%{
+       top: 20px;
+       opacity: 30%;
+       
+    }
+    60%{
+       top: 10px;
+       opacity: 60%;
+     
+    }
+      100%{
+       top: 0;
+       opacity: 100%;
+     
+     }
+    }
+
+   
+        #p2 {
+            opacity: 0;
+            position: absolute;
+            color: white;
+            font-size: xx-large;
+            left: 12px;
+            top: 21px;
+            text-shadow: -1px 9px 7px black;
+
+            margin-top: 361px;
+            animation-name: p2;
+            animation-duration: 1s;
+            animation-delay: 1.2s;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+        }
+    @keyframes p2 {
+      
+         
+        10%{
+           top: 30px;
+           opacity: 0;
+          
+        }
+        30%{
+           top: 20px;
+           opacity: 30%;
+           
+        }
+        60%{
+           top: 10px;
+           opacity: 60%;
+         
+        }
+          100%{
+           top: 0;
+           opacity: 100%;
+         
+         }
+        }
+    
+    
+
+    #p1{
+        opacity: 0;
+     position: absolute;
+        color: white;
+        font-size: xx-large;
+        right: 26px;
+        margin-top: -52px;
+        top: 0;
+        text-shadow: -1px 9px 7px black;
+
+        animation-name: p1;
+        animation-duration: 1s;
+       animation-delay: 1.2s;
+       animation-timing-function: ease-in;
+       animation-direction: alternate;
+    animation-fill-mode: forwards;}
+    @keyframes p1 {
+      
+         
+        10%{
+           top: 30px;
+           opacity: 0;
+          
+        }
+        30%{
+           top: 20px;
+           opacity: 30%;
+           
+        }
+        60%{
+           top: 10px;
+           opacity: 60%;
+         
+        }
+          100%{
+           top: 0;
+           opacity: 100%;
+         
+         }
+        }
+
+
+      
+
+ul{
+    position: relative;
+    top: 200px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.active{
+    display: none;
+}
+
+.active2{
+    display: none;
+}
+
+.active3{
+    display: none;
+}
+
+#white {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: black;
+        outline: 2px solid white;
+        list-style: none;
+        cursor: pointer;
+
+    }
+     
+#black{
+    list-style: none;
+
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        outline: 2px solid rgb(0, 0, 0);
+        cursor: pointer;
+    }
+
+
+
+
+    
+#red {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(55, 0, 255);
+    outline: 2px solid white;
+    list-style: none;
+    cursor: pointer;
+
+}
+ 
+#blue{
+list-style: none;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    outline: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
+
+
+
+#red2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 98);
+    outline: 2px solid white;
+    list-style: none;
+    cursor: pointer;
+
+}
+ 
+#move{
+list-style: none;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(204, 0, 255);
+    outline: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
+.qima{
+    opacity: 100%;
+    position: absolute;
+    top: 23px;
+    left: -1222px;
+    cursor: pointer;
+    color: white;
+}
+#ahmr{
+    color: white;
+}
+#ahmr:hover{
+    color: rgb(255, 0, 0);
+}
+.sev{
+    
+        position: relative;
+        background-image: linear-gradient(to top,rgb(27 30 71),rgb(80 85 179),rgb(116 121 251));
+                border-radius: 20px 20px;
+        box-shadow: 5px 5px 9px white;
+        width: 142px;
+    height: 218px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 9px;
+        top: -70px;
+        left: 22px;
+        color: white;
+        text-shadow: 5px 10px 4px black;
+        opacity: 100%; 
+        animation-name: sev; 
+        animation-duration: 1s;
+        animation-timing-function:linear;
+        animation-delay: 0s;
+        animation-direction: alternate;
+animation-iteration-count: infinite;
+
+}
+
+@keyframes sev {
+    10%{
+        top: -70px;
+    }
+    20%{
+        top: -71px;
+    }
+    30%{
+        top: -73px;
+    }
+    40%{
+        top: -75px;
+    }
+    50%{
+        top: -77px;
+    }
+    60%{
+        top: -79px;
+    }
+    70%{
+        top: -80px;
+    }
+    80%{
+        top: -82px;
+    }
+    90%{
+        top: -84px;
+    }
+
+    100%{
+        top: -86px;
+    }
+}
+
+
+
+
+
+
+
+.sev:hover{
+    box-shadow: none;
+    animation-play-state: paused
+}
+
+
+  .sev li {
+    position: relative;
+    list-style: none;
+    margin-left: -39px;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+}
+.sev li:hover{
+    text-shadow: none;
+}
+
+    
+
+    .active4{
+       opacity:0 ;
+    }
+
+
+
+    footer{
+        position: relative;
+        top: 274px;
+        width: 100%;
+        height: 200px;
+    background-image: linear-gradient(to right,white,gray);    border-radius: 0px 200px 0px 200px;
+    
+    }
+    
+    
+    footer p{
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: x-large;
+        text-shadow: 0px 0px .1px rgb(0, 0, 0);
+    }
+    
+    footer p:hover{
+        text-shadow: none;
+    }
+    .hed{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        gap: 0px;
+    
+    }
+
+   
+
+
+
+
+
+
+   
+    @media screen and (max-width:380px) {
+
+
+        .content{
+            width: 250px;
+            height: 250px;
+            background-image: url(koutch2.jpg);
+            border-radius: 10px 10px;
+            position: absolute;
+            top: 50%;
+            right: 15%;
+            }
+
+            .content2{
+                top: 99%;
+                right: 16%;
+
+            }
+
+
+
+
+
+
+            .linav {
+                
+                gap: 9px;
+                left: -12px;
+                
+           ;
+            }
+          
+          
+                .icon {
+                   
+                    gap: 59px;
+                    top: 75px;
+                     left: 85px;
+                   
+                }
+
+
+                body{
+                    background-image: url(bg2.jpg);
+                    background-size: contain;
+                   
+                    background-repeat: repeat;
+                    background-attachment: fixed;
+                }
+                #h2{
+                    margin-top: -21px;
+                    margin-right: 253px;
+                    font-size: medium;
+                }
+                .linav li{
+                    color: black;
+                }
+                .nav{
+                    background-image: linear-gradient(to right,rgb(205, 205, 255),rgb(129, 0, 235));
+                }
+            
+            }
+        
+            
+    
